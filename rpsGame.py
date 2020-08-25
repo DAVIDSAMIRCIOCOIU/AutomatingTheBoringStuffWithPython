@@ -8,8 +8,8 @@ losses = 0
 ties = 0
 
 while True:
-    print('%s Wins, %s Losses, %s Ties'%(wins, losses, ties))
-    while True: # The player input loop.
+    print('%s Wins, %s Losses, %s Ties' % (wins, losses, ties))
+    while True:  # The player input loop.
         print('Enter your move: (r)ock, (p)aper, (s)cissors or (q)uit')
         playerMove = input()
         if playerMove == 'q':
@@ -27,7 +27,7 @@ while True:
         print('SCISSORS vs...')
 
     # Display what the computer chose:
-    randomNumber = random.randint(1,3)
+    randomNumber = random.randint(1, 3)
     if randomNumber == 1:
         computerMove = 'r'
         print('ROCK')
